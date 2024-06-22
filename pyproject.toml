@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "airflow"
+version = "0.1.0"
+description = ""
+authors = ["shtjrgus010 <shtjrgus010@naver.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.13"
+apache-airflow = {extras=["celery"], version = "==2.9.2"}
+docutils ="==0.20.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

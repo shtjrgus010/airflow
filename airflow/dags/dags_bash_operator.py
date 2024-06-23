@@ -10,7 +10,7 @@ from airflow.operators.empty import EmptyOperator
 
 with DAG(
     # 웹 페이지에 보이는 이름
-    dag_id="example_bash_operator",
+    dag_id="dags_bash_operator",
     schedule="0 0 * * *",
     start_date=pendulum.datetime(2024, 6, 22, tz="Asia/Seoul"),
     catchup=False,
